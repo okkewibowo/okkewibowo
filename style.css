@@ -1,1 +1,158 @@
+* {
+  box-sizing: border-box;
+}
 
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #263238;
+  background: #fffaf2;
+  line-height: 1.7;
+}
+
+.hero {
+  padding: 24px 8% 70px;
+  color: white;
+  background:
+    radial-gradient(circle at 85% 15%, #ffd166 0 8%, transparent 8.5%),
+    linear-gradient(135deg, #5b2a86, #247ba0 60%, #70c1b3);
+  border-radius: 0 0 50px 50px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+}
+
+.logo {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.hero-content {
+  max-width: 650px;
+  margin: 65px auto 0;
+  text-align: center;
+}
+
+.foto-profil {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border: 6px solid white;
+  border-radius: 50%;
+  box-shadow: 0 8px 25px rgba(32, 26, 66, 0.3);
+}
+
+.sapaan {
+  margin-bottom: 0;
+  color: #ffe08a;
+  font-weight: bold;
+}
+
+.hero-content h1 {
+  margin: 4px 0;
+  font-size: clamp(2.5rem, 7vw, 4rem);
+}
+
+.hero-content h2 {
+  margin-top: 8px;
+  font-size: 1.35rem;
+}
+
+.tombol {
+  display: inline-block;
+  margin-top: 16px;
+  padding: 11px 22px;
+  color: #4b2675;
+  background: #ffd166;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: transform 0.2s, background 0.2s;
+}
+
+.tombol:hover {
+  background: white;
+  transform: translateY(-3px);
+}
+
+.bagian {
+  max-width: 900px;
+  margin: 32px auto;
+  padding: 28px;
+  background: white;
+  border-radius: 18px;
+  box-shadow: 0 8px 25px rgba(55, 45, 90, 0.1);
+}
+
+.bagian h2 {
+  color: #5b2a86;
+}
+
+.kartu {
+  margin-top: 16px;
+  padding: 20px;
+  background: linear-gradient(135deg, #f3e8ff, #e5f6f3);
+  border-left: 5px solid #f4a261;
+  border-radius: 12px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.kartu:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 18px rgba(55, 45, 90, 0.12);
+}
+
+.kartu h3 {
+  margin-top: 0;
+  color: #247ba0;
+}
+
+#kontak a {
+  color: #5b2a86;
+  font-weight: bold;
+}
+
+footer {
+  margin-top: 50px;
+  padding: 18px;
+  color: white;
+  background: #392052;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+}
+
+@media (max-width: 600px) {
+  .hero {
+    padding: 20px 6% 55px;
+  }
+
+  .hero-content {
+    margin-top: 50px;
+  }
+
+  .foto-profil {
+    width: 135px;
+    height: 135px;
+  }
+
+  .bagian {
+    margin: 20px 6%;
+    padding: 22px;
+  }
+}
